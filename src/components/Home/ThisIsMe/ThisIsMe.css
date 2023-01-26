@@ -1,0 +1,157 @@
+#ThisIsMeWrapper {
+    color: var(--text-color);
+    padding: var(--top-wrapper-padding);
+    margin: var(--main-wrapper-margin);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#ThisIsMeWrapper #ThisIsMe-LeftContainer #ThisIsMe-Headline h2 {
+    display: flex;
+    flex-direction: column;
+    font-size: calc(var(--p-font-size) * 4);
+    margin-bottom: 30px;
+}
+
+#ThisIsMeWrapper #ThisIsMe-LeftContainer #ThisIsMe-Headline h3 {
+    font-size: calc(var(--p-font-size) * 2);
+}
+
+#ThisIsMeWrapper #ThisIsMe-LeftContainer #ThisIsMe-TechStackImgWrapper {
+    display: grid;
+    width: fit-content;
+    height: 45px;
+    margin: 30px 0;
+    gap: 10px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, auto);
+    place-items: center center;
+}
+
+#ThisIsMeWrapper #ThisIsMe-LeftContainer #ThisIsMe-TechStackImgWrapper img {
+    height: 35px;
+}
+
+
+
+
+#ThisIsMeWrapper #ThisIsMe-RightContainer {
+    width: 350px;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    margin-right: 50px;
+    margin-left: 50px;
+
+}
+
+#ThisIsMeWrapper #ThisIsMe-RightContainer img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* box-shadow: 5px 5px 10px var(--text-color); */
+    filter: drop-shadow(0px 0px 30px var(--background-color-one));
+    position: relative;
+
+    border-radius: 5px;
+}
+
+#ThisIsMeWrapper #ThisIsMe-RightContainer div {
+    position: relative;
+    width: 300px;
+    height: 400px;
+}
+
+#ThisIsMeWrapper #ThisIsMe-RightContainer div::before {
+    content: "<";
+    font-size: calc(var(--p-font-size)*10);
+    position: absolute;
+    left: -100px;
+    top: -100px;
+    z-index: -1;
+    font-family: var(--font-family-p);
+    text-shadow: 0px 0px 10px var(--background-color-one);
+    opacity: .5;
+    color: var(--background-color-two);
+    display: block;
+}
+
+#ThisIsMeWrapper #ThisIsMe-RightContainer div::after {
+    content: ">";
+    font-size: calc(var(--p-font-size)*10);
+    position: absolute;
+    bottom: -100px;
+    right: -100px;
+    z-index: -1;
+    font-family: var(--font-family-p);
+    text-shadow: 0px 0px 10px var(--background-color-one);
+    opacity: .5;
+    color: var(--background-color-two);
+    display: block;
+}
+
+#ThisIsMeWrapper #ThisIsMe-LeftContainer .icons {
+    font-size: 40px;
+    padding: 10px;
+    transition: all .3s linear;
+    color: var(--text-color);
+}
+
+
+.icons:hover {
+    color: var(--background-color-one);
+    font-size: 40px;
+    padding: 10px;
+    cursor: pointer
+}
+
+@media only screen and (max-width: 800px) {
+    #ThisIsMeWrapper {
+        flex-direction: column;
+        align-items: start;
+        padding: 0 1.5rem;
+        margin-top: 9rem;
+    }
+
+    #ThisIsMeWrapper #ThisIsMe-LeftContainer #ThisIsMe-TechStackImgWrapper img {
+        height: 3rem;
+    }
+
+    #ThisIsMeWrapper #ThisIsMe-LeftContainer #ThisIsMe-TechStackImgWrapper {
+        margin-bottom: 3rem;
+    }
+
+    #ThisIsMeWrapper #ThisIsMe-RightContainer {
+        align-self: center;
+    }
+
+    #ThisIsMeWrapper #ThisIsMe-RightContainer div {
+        margin-top: 3rem;
+
+    }
+
+    #ThisIsMeWrapper #ThisIsMe-LeftContainer a {
+        font-size: calc(var(--a-font-size)*1.2);
+    }
+
+    #ThisIsMeWrapper #ThisIsMe-LeftContainer .icons {
+        font-size: calc(var(--a-font-size)*4);
+        padding: 20px;
+
+    }
+}
+
+
+@media only screen and (max-width: 600px) {
+    #ThisIsMeWrapper #ThisIsMe-RightContainer {
+        width: 250px;
+    }
+
+
+    #ThisIsMeWrapper #ThisIsMe-RightContainer div {
+        width: 250px;
+        height: 350px;
+    }
+}

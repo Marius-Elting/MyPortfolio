@@ -1,0 +1,131 @@
+@font-face {
+  font-family: Poppins-SemiBold;
+  src: url('./fonts/Poppins/Poppins-SemiBold.ttf');
+}
+
+@font-face {
+  font-family: Poppins-Bold;
+  src: url('./fonts/Poppins/Poppins-Bold.ttf');
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  /* outline: 1px solid black; */
+  ;
+  font-family: Poppins-SemiBold;
+  box-sizing: border-box;
+
+}
+
+body {
+  /* background-color: #002855 */
+  background: linear-gradient(#002855 34%, #0a2e71 70%, #023E7D 100%);
+  min-height: 90vh;
+}
+
+
+:root {
+  --text-color: #3eaaff;
+  --background-color-one: #001233;
+  --background-color-two: #002855;
+  --background-color-three: #0a2e71;
+  --background-color-four: #023770;
+  --background-color-five: #002750;
+  --p-font-size: 16px;
+  --a-font-size: 20px;
+  --hover-color: #63fdff;
+  --top-wrapper-padding: 20px 10vw;
+  --main-wrapper-padding: 100px 10vw;
+  --main-wrapper-margin: 100px 0px;
+  --button-border: #0466c8;
+  --font-family-p: Poppins-SemiBold;
+  --font-family-bold: Poppins-Bold;
+}
+
+@media only screen and (max-width: 600px) {
+  :root {
+    --p-font-size: 13px;
+    --a-font-size: 20px;
+  }
+}
+
+
+@media only screen and (max-width: 1500px) {
+  :root {
+    --top-wrapper-padding: 20px 5vw;
+    --main-wrapper-padding: 100px 5vw;
+    --main-wrapper-margin: 100px 0px;
+  }
+}
+
+@media only screen and (max-width: 1250px) {
+  :root {
+    --top-wrapper-padding: 20px 3vw;
+    --main-wrapper-padding: 100px 3vw;
+    --main-wrapper-margin: 100px 0px;
+  }
+}
+
+.first-color {
+  background: #fda403;
+  background: linear-gradient(to bottom, green, blue)
+}
+
+.second-color {
+  background: #e8751a;
+}
+
+.third-color {
+  background: #c51350;
+}
+
+.fourth-color {
+  background: #8a1253;
+}
+
+.color1 {
+  color: #140f07;
+}
+
+.color2 {
+  color: #10253d;
+}
+
+.color3 {
+  color: #23649c;
+}
+
+.color4 {
+  color: #3eaaff;
+}
+
+.color5 {
+  color: #63fdff;
+}
+
+.underlineHover {
+  position: relative;
+}
+
+.underlineHover:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #0087ca;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.underlineHover:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+a {
+  text-decoration: none;
+}

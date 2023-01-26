@@ -1,0 +1,117 @@
+.ProjectsOverview-ProjectWrapper {
+    width: 400px;
+    height: 400px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    flex-direction: column;
+    gap: 1rem;
+    margin: 0 40px;
+}
+
+.ProjectsOverview-ProjectWrapper img {
+    height: 100%;
+    filter: drop-shadow(0px 0px 30px var(--background-color-one));
+    overflow: hidden;
+}
+
+.ProjectsOverview-ProjectWrapper img[alt="The PokéDex Project"] {
+    height: 60%;
+}
+
+.ProjectsOverview-ProjectWrapper h3 {
+    font-size: calc(var(--p-font-size)*2);
+    color: var(--text-color)
+}
+
+.ProjectsOverview-HoverDiv {
+    position: absolute;
+    opacity: 0;
+    top: 10;
+    user-select: none;
+    transition: all 0.5s ease;
+    font-size: var(--p-font-size);
+    font-family: Poppins-SemiBold;
+    background-color: var(--background-color-three);
+    padding: 10px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 20px var(--background-color-three);
+}
+
+.ProjectsOverview-HoverDiv p {
+    margin-top: 10px;
+}
+
+.ProjectsOverview-HoverDiv a {
+    display: inline-block;
+    margin-top: 1rem;
+    font-size: calc(var(--a-font-size)*0.8);
+    color: var(--text-color)
+}
+
+.ProjectsOverview-ProjectWrapper img:hover+.ProjectsOverview-HoverDiv,
+.ProjectsOverview-ProjectWrapper .ProjectsOverview-HoverDiv:hover {
+    cursor: pointer;
+    display: block;
+    font-size: calc(var(--p-font-size)*1);
+    color: var(--text-color);
+    opacity: 1;
+}
+
+.ProjectsOverview-ProjectWrapper img:hover,
+.ProjectsOverview-ProjectWrapper img:has(+div:hover) {
+    filter: drop-shadow(0px 0px 75px var(--background-color-one));
+}
+
+.ProjectsOverview-ProjectWrapper .ProjectsOverview-Footer {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 30px;
+}
+
+.ProjectsOverview-ProjectWrapper .ProjectsOverview-Footer a {
+    font-size: var(--a-font-size);
+}
+
+.ProjectsOverview-ProjectWrapper::before {
+    content: "{";
+    font-size: calc(var(--p-font-size)*10);
+    position: absolute;
+    top: -20px;
+    left: -70px;
+    text-shadow: 0px 0px 5px var(--background-color-one);
+    opacity: .5;
+    color: var(--background-color-four);
+    font-family: var(--font-family-p);
+    display: block;
+}
+
+.ProjectsOverview-ProjectWrapper::after {
+    font-size: calc(var(--p-font-size)*10);
+    position: absolute;
+    bottom: -100px;
+    right: -70px;
+    z-index: -1;
+    font-family: var(--font-family-p);
+    text-shadow: 0px 0px 5px var(--background-color-one);
+    opacity: .5;
+    color: var(--background-color-four);
+    display: block;
+}
+
+.ProjectsOverview-ProjectWrapper:not(:nth-last-child(1))::after {
+    content: "},";
+}
+
+.ProjectsOverview-ProjectWrapper:nth-last-child(1)::after {
+    content: "}";
+}
+
+@media only screen and (max-width: 800px) {
+    .ProjectsOverview-ProjectWrapper {
+        width: 300px;
+        height: 300px;
+    }
+}

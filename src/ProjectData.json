@@ -1,0 +1,30 @@
+[
+  {
+    "title": "Movie Mania",
+    "headline": "The Movie Mania Project",
+    "description": "The Movie Mania Project was the Front-End Project in the Full-Stack Bootcamp. It was a group Work with a group of four People. We worked with ReactJS and CSS. In adition to the Frontend Part I added an Google Login and linked an Database to the Page so you can save you Favorites. To get the Data we used the MovieDB API.",
+    "image": "MovieManiaImage",
+    "link": "https://super-movie-mania.netlify.app/"
+  },
+  {
+    "title": "Weather APP",
+    "headline": "The WeatherApp Project",
+    "description": "The WeatherApp Project was an Frontend Only Project. We worked with HTML, CSS and Javascript. To get the Data we used the Open Weather API.",
+    "image": "WeatherAppImage",
+    "link": "https://marius-elting.github.io/Weather-App/"
+  },
+  {
+    "title": "PokéDex",
+    "headline": "The PokéDex Project",
+    "description": "The PokéDex Project was an Frontend Only Project in the Full-Stack Bootcamp. It was a group Work with a group of four People. We worked with ReactJS and CSS. To get the Data we used the Pokemon API.",
+    "image": "PokeDexImage",
+    "link": "https://yourtoponepokedex.netlify.app/"
+  },
+  {
+    "title": "",
+    "headline": "",
+    "description": "",
+    "image": "",
+    "link": ""
+  }
+]

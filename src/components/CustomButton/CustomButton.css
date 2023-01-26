@@ -1,0 +1,19 @@
+.CustomButtonWrapper {
+    display: inline-block;
+    padding: 10px 20px;
+    border: 3px solid var(--button-border);
+    /* background-color: var(--button-background); */
+    transition: .6s;
+
+}
+
+.CustomButtonWrapper:hover {
+    cursor: pointer;
+}
+
+.CustomButtonWrapper a {
+    color: var(--text-color);
+    text-decoration: none;
+    transition: .6s;
+    position: relative;
+}
