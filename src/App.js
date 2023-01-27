@@ -6,7 +6,8 @@ import Aos from "aos";
 import { useEffect } from "react";
 import AboutMe from './pages/AboutMe/AboutMe';
 import AllProjects from './components/Projects/AllProjects/AllProjects';
-import ContactPage from './components/ContactPage/ContactPage';
+import ContactPage from './pages/ContactPage/ContactPage';
+import DataPolicy from './pages/Policy/Policy';
 
 function App() {
   useEffect(() => {
@@ -41,6 +42,7 @@ function App() {
           <Route path="/AboutMe" element={<AboutMe />} />^
           <Route path="/projects" element={<AllProjects />} />
           <Route path="/contactme" element={<ContactPage />} />
+          <Route path="/privatepolicy" element={<DataPolicy />} />
         </Routes>
       </Router>
     </>

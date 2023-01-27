@@ -8,6 +8,7 @@ function ContactPage() {
     const subjectRef = useRef()
     const nameRef = useRef()
     const textRef = useRef()
+    const acceptPolicy = useRef()
 
     const sendMail = (e) => {
         e.preventDefault()
@@ -15,11 +16,10 @@ function ContactPage() {
         if (!subjectRef.current.value) subjectRef.current.style.border = "3px solid red"
         if (!nameRef.current.value) nameRef.current.style.border = "3px solid red"
         if (!textRef.current.value) textRef.current.style.border = "3px solid red"
+        if (!acceptPolicy.current.checked) acceptPolicy.current.style.outline = "3px solid red"
 
-
-        if (!emailRef.current.value || !subjectRef.current.value || !nameRef.current.value || !textRef.current.value) return
+        if (!emailRef.current.value || !subjectRef.current.value || !nameRef.current.value || !textRef.current.value || !acceptPolicy.current.checked) return
         const form = new FormData(e.target)
-        console.log(process.env.REACT_APP_URL)
         fetch(`${process.env.REACT_APP_URL}/contactme`,
             {
                 method: "POST",
@@ -38,7 +38,6 @@ function ContactPage() {
     function isValidEmailAddress(address) {
         let re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
         if (re.test(address)) {
-            console.log("valid")
             setEmailStatus("OK")
         } else {
             setEmailStatus("Error")
@@ -49,7 +48,6 @@ function ContactPage() {
         let re = /[0-9]/
         if (!re.test(str) && e.target.value.length > 0) {
             e.target.style.border = "3px solid green"
-            console.log("valid")
             setNameStatus("OK")
         } else {
             e.target.style.border = "3px solid red"
@@ -121,8 +119,8 @@ function ContactPage() {
                     >
                     </textarea>
                     <div className="ContactPage-acceptData">
-                        <label htmlFor="acceptDatenschutz"><input type="checkbox" id="acceptDatenschutz" />"Ich willige ein, dass Marius Elting meine personenbezogenen Daten (Name und E-Mail-Adresse) benutzen darf, um Kontakt mit mir aufzunehmen."</label>
-                        <p>Mit dem Absenden dieser Anfrage bestätigen Sie, dass Sie die {<Link to="/datenschutz">Datenschutzerklärung</Link>} gelesen zu haben."</p>
+                        <label htmlFor="acceptDatenschutz"><input ref={acceptPolicy} type="checkbox" id="acceptDatenschutz" />"Ich willige ein, dass Marius Elting meine personenbezogenen Daten (Name und E-Mail-Adresse) benutzen darf, um Kontakt mit mir aufzunehmen."</label>
+                        <p>Mit dem Absenden dieser Anfrage bestätigen Sie, dass Sie die {<Link to="/privatepolicy">Datenschutzerklärung</Link>} gelesen zu haben."</p>
                     </div>
                     <button type="submit">Senden</button>
                 </form>
