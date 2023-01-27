@@ -7,8 +7,7 @@ function Header() {
     }
     return (
         <header id="HeaderWrapper">
-            <p className="Header-DeviceInfo">You watching this page with a Screen width lower than 500px. The Page might not look as expected.
-                The recommended Width is 750px+.
+            <p className="Header-DeviceInfo">This page has been optimised for viewing at a minimum width of 750px - you are currently viewing at a width of less than 500px.
             </p>
             <input className="Header-AcceptInfo" type="checkbox"></input>
             <Link to="/">
