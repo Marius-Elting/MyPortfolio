@@ -23,5 +23,5 @@ export { default as Figma } from "./img/Figma.svg"
 export { default as Sass } from "./img/Sass.svg"
 export { default as Bootstrap } from "./img/Bootstrap_.svg"
 export { default as webflow } from "./img/webflow.svg"
-export const aosDataProject = { "data-aos": "zoom-out", "data-aos-offset": "160" };
+export const aosDataProject = { "data-aos": "zoom-out", "data-aos-offset": "140" };
 export const aosDataTechStack = { "ata-aos": "zoom-out", "data-aos-easing": "ease-in-out" };

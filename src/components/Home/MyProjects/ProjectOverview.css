@@ -8,7 +8,7 @@
     position: relative;
 }
 
-#ProjectsOverviewWrapper article {
+#ProjectsOverviewWrapper .ProjectsOverview-ProjectWrapper {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -21,7 +21,7 @@
     font-size: calc(var(--p-font-size)*4);
     color: var(--text-color);
     display: inline-block;
-    position: relative
+    position: relative;
 }
 
 #ProjectsOverviewWrapper h3 {
@@ -56,7 +56,7 @@
     display: block;
 }
 
-#ProjectsOverviewWrapper>div h2::after {
+#ProjectsOverviewWrapper>article h2::after {
     content: "=";
     font-size: calc(var(--p-font-size)*5);
     position: absolute;
