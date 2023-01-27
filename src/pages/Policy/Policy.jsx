@@ -1,3 +1,5 @@
+import "./Policy.css"
+
 function DataPolicy() {
 
     return (
@@ -6,7 +8,7 @@ function DataPolicy() {
             <h2>Under Construction...</h2>
             <section>
                 <p>Ich verwende keine Cookies oder ähnliches.</p>
-                <p>Die Daten die im Kontaktformular abgesendet werden, werden an meine E-Mail Adresse (contact@mariuselting.dev) weitergeleitet.
+                <p>Die Daten die im Kontaktformular abgesendet werden, werden an meine E-Mail Adresse (<a href="mailto:contacct@mariuselting.dev">contact@mariuselting.dev</a>) weitergeleitet.
                     Die Nachrichten werden lediglich von mir gelesen und </p>
             </section>
         </main>

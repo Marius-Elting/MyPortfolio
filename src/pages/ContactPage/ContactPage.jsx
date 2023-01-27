@@ -10,6 +10,7 @@ function ContactPage() {
     const textRef = useRef()
     const acceptPolicy = useRef()
 
+
     const sendMail = (e) => {
         e.preventDefault()
         if (!emailRef.current.value) setEmailStatus("Error")
