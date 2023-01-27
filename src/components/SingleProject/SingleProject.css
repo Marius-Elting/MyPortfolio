@@ -29,7 +29,8 @@
 .SingleProject-HoverDiv {
     position: absolute;
     opacity: 0;
-    top: 10;
+    top: 60%;
+    transform: translateY(-50%);
     user-select: none;
     transition: all 0.5s ease;
     font-size: var(--p-font-size);
@@ -106,7 +107,13 @@
 }
 
 .SingleProject-ProjectWrapper:nth-last-child(1)::after {
-    content: "}";
+    content: "} ]";
+    right: -220px;
+}
+
+.SingleProject-ProjectWrapper:nth-child(1)::before {
+    content: "[{";
+    left: -150px;
 }
 
 @media only screen and (max-width: 800px) {

@@ -35,8 +35,6 @@
 }
 
 
-
-
 #ThisIsMeWrapper #ThisIsMe-RightContainer {
     width: 350px;
     height: 500px;
@@ -54,7 +52,6 @@
     /* box-shadow: 5px 5px 10px var(--text-color); */
     filter: drop-shadow(0px 0px 30px var(--background-color-one));
     position: relative;
-
     border-radius: 5px;
 }
 
@@ -120,7 +117,7 @@
     }
 
     #ThisIsMeWrapper #ThisIsMe-LeftContainer #ThisIsMe-TechStackImgWrapper {
-        margin-bottom: 3rem;
+        margin-bottom: 10rem;
     }
 
     #ThisIsMeWrapper #ThisIsMe-RightContainer {

@@ -60,7 +60,7 @@ function ContactPage() {
             <h1>Contact Me!</h1>
             <section>
                 <form className="ContactPage-FormWrapper" onSubmit={sendMail}>
-                    <label htmlFor="yourName">Dein Name</label>
+                    <label htmlFor="yourName">Your Name</label>
                     <input
                         id="yourName"
                         onChange={(e) => {
@@ -74,9 +74,9 @@ function ContactPage() {
                             display: nameStatus === "Error" ? "block" : "none",
                         }}
                     >
-                        Namen dürfen keine Zahlen enthalten.
+                        Names can not contain numbers.
                     </p>
-                    <label htmlFor="yourmail">Deine E-Mail</label>
+                    <label htmlFor="yourmail">Your E-Mail</label>
                     <input
                         id="yourmail"
                         onChange={(e) => isValidEmailAddress(e.target.value)}
@@ -91,9 +91,9 @@ function ContactPage() {
                             display: emailStatus === "Error" ? "block" : "none",
                         }}
                     >
-                        Bitte gib eine korrekte E-Mail ein.
+                        Please enter a valid E-Mail.
                     </p>
-                    <label htmlFor="yourSubject">Dein Anliegen</label>
+                    <label htmlFor="yourSubject">Your Subject</label>
                     <input
                         id="yourSubject"
                         onChange={(e) => {
@@ -106,7 +106,7 @@ function ContactPage() {
                         ref={subjectRef} type="text" name="subject" placeholder="Your Subject"
                     >
                     </input>
-                    <label htmlFor="yourMessage">Deine Nachricht</label>
+                    <label htmlFor="yourMessage">Your Message</label>
                     <textarea
                         id="yourMessage"
                         onChange={(e) => {
@@ -120,10 +120,10 @@ function ContactPage() {
                     >
                     </textarea>
                     <div className="ContactPage-acceptData">
-                        <label htmlFor="acceptDatenschutz"><input ref={acceptPolicy} type="checkbox" id="acceptDatenschutz" />"Ich willige ein, dass Marius Elting meine personenbezogenen Daten (Name und E-Mail-Adresse) benutzen darf, um Kontakt mit mir aufzunehmen."</label>
-                        <p>Mit dem Absenden dieser Anfrage bestätigen Sie, dass Sie die {<Link to="/privatepolicy">Datenschutzerklärung</Link>} gelesen zu haben."</p>
+                        <label htmlFor="acceptDatenschutz"><input ref={acceptPolicy} type="checkbox" id="acceptDatenschutz" />I agree that Marius Elting may use my personal data (name and e-mail address) to contact me.</label>
+                        <p>By submitting this request, you acknowledge that you have read the {<Link to="/privatepolicy">Privacy Policy.</Link>}</p>
                     </div>
-                    <button type="submit">Senden</button>
+                    <button type="submit">Send</button>
                 </form>
             </section>
         </main>
