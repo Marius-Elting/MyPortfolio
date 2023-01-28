@@ -50,7 +50,7 @@ function TechStack() {
                     <img src={NodeJSIcon} alt="NodeJS Logo"></img>
                     <div className="ImgDescription">
                         <h2>NodeJS</h2>
-                        {/* <p>With my skills in Node.js, I am able to efficiently build back-end applications. I am familiar with the Node.js runtime, its modules, and its asynchronous event-driven architecture, and have experience with popular libraries and frameworks such as Express. I am skilled in creating scalable server-side applications and able to build professional-quality web applications using Node.js.</p> */}
+
                     </div>
                 </div>
                 <div className="SingleImgWrapper"  {...aosDataProject} data-aos-offset="155"

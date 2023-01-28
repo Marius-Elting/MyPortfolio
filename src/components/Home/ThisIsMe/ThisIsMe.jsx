@@ -2,6 +2,7 @@ import "./ThisIsMe.css";
 import { PlaceHolderPic, MongoDBIcon, ExpressIcon, ReactIcon, NodeJSIcon } from "../../../Imports";
 import CustomButton from "../../CustomButton/CustomButton";
 import ArrowDown from "../../ArrowDown/ArrowDown";
+import MyPicture from "../../Picture/Picture";
 
 function ThisIsMe() {
     return (
@@ -12,25 +13,19 @@ function ThisIsMe() {
                     <h3>{"<"}Full Stack Webdeveloper{"/>"}</h3>
                 </article>
                 <article id="ThisIsMe-TechStackImgWrapper">
-                    <img src={MongoDBIcon} alt="MongoDB Logo"></img>
-                    <img src={ExpressIcon} alt="Express Logo"></img>
-                    <img src={ReactIcon} alt="React logo"></img>
-                    <img src={NodeJSIcon} alt="NodeJS Logo"></img>
-                    <p>MongoDB</p>
-                    <p>ExpressJS</p>
-                    <p>ReactJS</p>
-                    <p>NodeJS</p>
+                    <p><img src={MongoDBIcon} alt="MongoDB Logo"></img>MongoDB</p>
+                    <p><img src={ExpressIcon} alt="Express Logo"></img>ExpressJS</p>
+                    <p><img src={ReactIcon} alt="React logo"></img>ReactJS</p>
+                    <p><img src={NodeJSIcon} alt="NodeJS Logo"></img>NodeJS</p>
                 </article>
-                <CustomButton linkTo="/contactme">Contact Me!</CustomButton>
+                <CustomButton size={20} linkTo="/contactme">Contact Me!</CustomButton>
                 <div>
                     <a title="My LinkedIn" target="_blanck" href="https://www.linkedin.com/in/marius-elting-a60959203/"><i className="uil uil-linkedin icons"></i></a>
                     <a title="My Github" target="_blanck" href="https://github.com/Marius-Elting"><i className="uil uil-github icons"></i></a>
                 </div>
             </article>
             <article id="ThisIsMe-RightContainer">
-                <div>
-                    <img src={PlaceHolderPic} alt="This is Me"></img>
-                </div>
+                <MyPicture />
             </article>
             <ArrowDown />
         </section>

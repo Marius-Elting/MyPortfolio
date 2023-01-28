@@ -1,6 +1,8 @@
 .ContactPageWrapper {
     padding: var(--top-wrapper-padding);
-    margin: var(--main-wrapper-margin)
+    margin: var(--main-wrapper-margin);
+    display: flex;
+
 }
 
 .ContactPageWrapper h1 {
@@ -11,7 +13,7 @@
 .ContactPageWrapper .ContactPage-FormWrapper {
     display: flex;
     flex-direction: column;
-    width: 500px;
+    width: 50%;
     margin-left: 5rem;
 }
 
@@ -61,7 +63,7 @@
     box-shadow: 0px 0px 50px var(--background-color-one);
 }
 
-.ContactPageWrapper .ContactPage-FormWrapper p {
+.ContactPageWrapper .ContactPage-FormWrapper .errorMsg {
     color: red;
     font-size: calc(var(--p-font-size)*1.2);
 }
@@ -104,7 +106,57 @@
     margin: 10px;
 }
 
-@media only screen and (max-width: 900px) {
+.ContactPageWrapper .ContactPage-RightContainer .icons {
+    font-size: 70px;
+    color: var(--text-color);
+    padding: 10px
+}
+
+.ContactPageWrapper .ContactPage-RightContainer .icons:hover {
+    color: var(--background-color-one);
+
+}
+
+.ContactPageWrapper .ContactPage-RightContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    justify-content: center;
+}
+
+
+.ContactPageWrapper .ContactPage-RightContainer h3 {
+
+    color: var(--text-color);
+    font-size: calc(var(--p-font-size)*2)
+}
+
+.ContactPageWrapper .ContactPage-RightContainer h4 {
+    color: var(--text-color);
+    font-size: calc(var(--p-font-size)*1.5)
+}
+
+.ContactPageWrapper .ContactPage-RightContainer a {
+    color: var(--text-color);
+    font-size: calc(var(--p-font-size)*1.2);
+    text-decoration: underline;
+    text-underline-offset: 5px;
+}
+
+
+
+@media only screen and (max-width: 950px) {
+
+    .ContactPageWrapper {
+        flex-direction: column;
+        gap: 10rem
+    }
+
+    .ContactPageWrapper .ContactPage-RightContainer,
+    .ContactPageWrapper .ContactPage-LeftContainer {
+        width: 100%;
+    }
 
     .ContactPageWrapper .ContactPage-FormWrapper {
         margin: 0;
@@ -117,12 +169,20 @@
     }
 
     .ContactPageWrapper .ContactPage-acceptData label input {
-        height: 50px;
-        width: 50px;
+        height: 40px;
+        width: 40px;
 
     }
 
     .ContactPageWrapper .ContactPage-acceptData {
         width: 95%;
     }
+}
+
+@media only screen and (max-width: 900px) {
+    .ContactPageWrapper .ContactPage-RightContainer a {
+        color: var(--text-color);
+        font-size: calc(var(--p-font-size)*2)
+    }
+
 }

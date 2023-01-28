@@ -69,3 +69,12 @@
     color: var(--background-color-four);
     display: block;
 }
+
+@media only screen and (max-width: 900px) {
+
+    #ProjectsOverviewWrapper>article h2::before,
+    #ProjectsOverviewWrapper>article h2::after,
+    #ProjectsOverviewWrapper::before {
+        display: none;
+    }
+}

@@ -5,6 +5,7 @@
     /* background-color: var(--button-background); */
     transition: .6s;
     margin: 1rem 0;
+    width: fit-content;
 
 }
 
@@ -13,6 +14,13 @@
 }
 
 .CustomButtonWrapper a {
+    color: var(--text-color);
+    text-decoration: none;
+    transition: .6s;
+    position: relative;
+}
+
+.CustomButtonWrapper p {
     color: var(--text-color);
     text-decoration: none;
     transition: .6s;

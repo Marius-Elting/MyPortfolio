@@ -1,6 +1,9 @@
 import "./ContactPage.css"
 import { useState, useRef } from "react"
 import { Link } from "react-router-dom"
+import MyPicture from "../../components/Picture/Picture"
+import CustomButton from "../../components/CustomButton/CustomButton"
+
 function ContactPage() {
     const [emailStatus, setEmailStatus] = useState()
     const [nameStatus, setNameStatus] = useState()
@@ -57,8 +60,8 @@ function ContactPage() {
     }
     return (
         <main className="ContactPageWrapper">
-            <h1>Contact Me!</h1>
-            <section>
+            <section className="ContactPage-LeftContainer">
+                <h1>Contact Me!</h1>
                 <form className="ContactPage-FormWrapper" onSubmit={sendMail}>
                     <label htmlFor="yourName">Your Name</label>
                     <input
@@ -70,6 +73,8 @@ function ContactPage() {
                     >
                     </input>
                     <p
+                        className="errorMsg"
+
                         style={{
                             display: nameStatus === "Error" ? "block" : "none",
                         }}
@@ -77,6 +82,7 @@ function ContactPage() {
                         Names can not contain numbers.
                     </p>
                     <label htmlFor="yourmail">Your E-Mail</label>
+
                     <input
                         id="yourmail"
                         onChange={(e) => isValidEmailAddress(e.target.value)}
@@ -87,6 +93,7 @@ function ContactPage() {
                     >
                     </input>
                     <p
+                        className="errorMsg"
                         style={{
                             display: emailStatus === "Error" ? "block" : "none",
                         }}
@@ -123,8 +130,21 @@ function ContactPage() {
                         <label htmlFor="acceptDatenschutz"><input ref={acceptPolicy} type="checkbox" id="acceptDatenschutz" />I agree that Marius Elting may use my personal data (name and e-mail address) to contact me.</label>
                         <p>By submitting this request, you acknowledge that you have read the {<Link to="/privatepolicy">Privacy Policy.</Link>}</p>
                     </div>
+                    {/* <CustomButton type={"submit"} size={25} linkTo="/contactme">Send</CustomButton> */}
                     <button type="submit">Send</button>
                 </form>
+            </section>
+            <section className="ContactPage-RightContainer">
+                <article id="ThisIsMe-RightContainer">
+                    <MyPicture />
+                </article>
+                <article>
+                    <a title="My LinkedIn" target="_blanck" href="https://www.linkedin.com/in/marius-elting-a60959203/"><i className="uil uil-linkedin icons"></i></a>
+                    <a title="My Github" target="_blanck" href="https://github.com/Marius-Elting"><i className="uil uil-github icons"></i></a>
+                </article>
+                <article>
+                    <a href="mailto:contact@mariuselting.dev" className="underlineHover">contact@mariuselting.dev</a>
+                </article>
             </section>
         </main>
     );

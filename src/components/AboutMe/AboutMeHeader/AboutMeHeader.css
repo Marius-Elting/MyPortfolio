@@ -50,13 +50,7 @@
 
 
 
-#AboutMeHeader-Wrapper #AboutMeHeader-RightContainer img {
-    width: 300px;
-    height: 400px;
-    object-fit: cover;
-    filter: drop-shadow(0px 0px 30px var(--background-color-one));
-    border-radius: 5px;
-}
+
 
 
 .seeMore {
@@ -107,10 +101,6 @@
         height: auto;
     }
 
-    #AboutMeHeader-Wrapper #AboutMeHeader-RightContainer img {
-        display: none;
-    }
-
     #AboutMeHeader-Wrapper #AboutMeHeader-InfoWrapperTwo,
     #AboutMeHeader-Wrapper #AboutMeHeader-InfoWrapperOne {
         width: 95%;
@@ -142,5 +132,14 @@
         width: 90%;
         align-self: start;
         font-size: calc(var(--p-font-size)*1.2);
+    }
+}
+
+
+@media only screen and (max-width: 1150px) {
+    #AboutMeHeader-Wrapper {
+        flex-direction: column;
+        align-items: center;
+        gap: 5rem;
     }
 }

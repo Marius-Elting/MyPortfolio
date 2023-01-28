@@ -15,7 +15,7 @@
   ;
   font-family: Poppins-SemiBold;
   box-sizing: border-box;
-
+  outline: 1px solid red;
 }
 
 body {
@@ -43,12 +43,10 @@ body {
   --font-family-bold: Poppins-Bold;
 }
 
-@media only screen and (max-width: 600px) {
-  :root {
-    --p-font-size: 13px;
-    --a-font-size: 20px;
-  }
-}
+
+
+
+
 
 
 @media only screen and (max-width: 1500px) {
@@ -59,11 +57,44 @@ body {
   }
 }
 
+
 @media only screen and (max-width: 1250px) {
   :root {
     --top-wrapper-padding: 20px 3vw;
     --main-wrapper-padding: 100px 3vw;
     --main-wrapper-margin: 100px 0px;
+  }
+}
+
+
+@media only screen and (max-width: 900px) {
+  :root {
+    --main-wrapper-margin: 9rem 0;
+  }
+
+  @-moz-document url-prefix() {
+    :root {
+      --main-wrapper-margin: 12rem 0;
+    }
+
+  }
+}
+
+@media only screen and (max-width: 600px) {
+
+  :root {
+    --p-font-size: 10px;
+    --a-font-size: 15px;
+  }
+}
+
+
+@media only screen and (max-width: 520px) {
+  @-moz-document url-prefix() {
+    :root {
+      --main-wrapper-margin: 15rem 0;
+    }
+
   }
 }
 
