@@ -8,12 +8,17 @@
   src: url('./fonts/Poppins/Poppins-Bold.ttf');
 }
 
+@font-face {
+  font-family: Poppins-Medium;
+  src: url('./fonts/Poppins/Poppins-Medium.ttf');
+}
+
 * {
   margin: 0;
   padding: 0;
   /* outline: 1px solid black; */
   ;
-  font-family: Poppins-SemiBold;
+  font-family: Poppins-Medium;
   box-sizing: border-box;
 }
 

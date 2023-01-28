@@ -8,6 +8,7 @@ import AboutMe from './pages/AboutMe/AboutMe';
 import AllProjects from './pages/AllProjects/AllProjects';
 import ContactPage from './pages/ContactPage/ContactPage';
 import DataPolicy from './pages/Policy/Policy';
+import Error404Page from './pages/404Page/404Page';
 
 function App() {
   useEffect(() => {
@@ -40,6 +41,7 @@ function App() {
           <Route path="/projects" element={<AllProjects />} />
           <Route path="/contactme" element={<ContactPage />} />
           <Route path="/privatepolicy" element={<DataPolicy />} />
+          <Route path="*" element={<Error404Page />} />
         </Routes>
       </Router>
     </>

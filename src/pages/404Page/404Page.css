@@ -1,0 +1,15 @@
+#ErrorPageMainWrapper {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: calc(var(--p-font-size)*3);
+    color: var(--background-color-one);
+    gap: 1rem;
+}
+
+#ErrorPageMainWrapper a {
+    font-size: calc(var(--p-font-size)*2);
+    color: var(--text-color);
+}
