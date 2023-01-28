@@ -41,7 +41,7 @@ function App() {
           <Route path="/projects" element={<AllProjects />} />
           <Route path="/contactme" element={<ContactPage />} />
           <Route path="/privatepolicy" element={<DataPolicy />} />
-          <Route path="*" element={<Error404Page />} />
+          <Route path="*" element={<Error404Page />} status={404} />
         </Routes>
       </Router>
     </>
