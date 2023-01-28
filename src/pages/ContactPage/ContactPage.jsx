@@ -3,6 +3,7 @@ import { useState, useRef } from "react"
 import { Link } from "react-router-dom"
 import MyPicture from "../../components/Picture/Picture"
 import CustomButton from "../../components/CustomButton/CustomButton"
+import { Helmet } from "react-helmet"
 
 function ContactPage() {
     const [emailStatus, setEmailStatus] = useState()
@@ -60,6 +61,14 @@ function ContactPage() {
     }
     return (
         <main className="ContactPageWrapper">
+            <Helmet>
+                <meta charSet="utf-8" />
+                <title>Contact Me - Marius Elting - Webdeveloper</title>
+                <link rel="canonical" href="https://mariuselting.dev/contactme" />
+                <meta name="description" content="I'm Marius Elting, this is my Portfolio. 
+  Watch my TechStack, Projects and Contact me.
+  I'm an aspiring Full Stack Web Developer using the MERN Stack. Contact me per Mail." />
+            </Helmet>
             <section className="ContactPage-LeftContainer">
                 <h1>Contact Me!</h1>
                 <form className="ContactPage-FormWrapper" onSubmit={sendMail}>

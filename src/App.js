@@ -5,7 +5,7 @@ import Home from './pages/Home/Home';
 import Aos from "aos";
 import { useEffect } from "react";
 import AboutMe from './pages/AboutMe/AboutMe';
-import AllProjects from './components/Projects/AllProjects/AllProjects';
+import AllProjects from './pages/AllProjects/AllProjects';
 import ContactPage from './pages/ContactPage/ContactPage';
 import DataPolicy from './pages/Policy/Policy';
 
