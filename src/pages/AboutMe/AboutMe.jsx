@@ -1,8 +1,6 @@
 import "./AboutMe.css";
-import PlaceHolderPic from "../../img/Placeholder.png";
-import CustomButton from "../../components/CustomButton/CustomButton";
 import AboutMeHeader from "../../components/AboutMe/AboutMeHeader/AboutMeHeader";
-import TimeLine from "../../components/AboutMe/TimeLine/TimeLine";
+
 import { Helmet } from "react-helmet";
 
 function AboutMe() {

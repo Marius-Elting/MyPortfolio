@@ -1,9 +1,3 @@
-// import ReactIcon from "../../../img/svg/React.svg";
-// import ExpressIcon from "../../../img/svg/express.svg";
-// import MongoDBIcon from "../../../img/svg/MongoDB.svg";
-// import NodeJSIcon from "../../../img/svg/nodejs.svg";
-// import PlaceHolderPic from "../../../img/Placeholder.png";
-
 export { default as ReactIcon } from "./img/svg/React.svg";
 export { default as ExpressIcon } from "./img/svg/express.svg";
 export { default as MongoDBIcon } from "./img/svg/MongoDB.svg";

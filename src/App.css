@@ -1,4 +1,9 @@
 @font-face {
+  font-family: Poppins-Medium;
+  src: url('./fonts/Poppins/Poppins-Medium.ttf');
+}
+
+@font-face {
   font-family: Poppins-SemiBold;
   src: url('./fonts/Poppins/Poppins-SemiBold.ttf');
 }
@@ -8,17 +13,13 @@
   src: url('./fonts/Poppins/Poppins-Bold.ttf');
 }
 
-@font-face {
-  font-family: Poppins-Medium;
-  src: url('./fonts/Poppins/Poppins-Medium.ttf');
-}
+
 
 * {
   margin: 0;
   padding: 0;
   /* outline: 1px solid black; */
-  ;
-  font-family: Poppins-Medium;
+  font-family: Poppins-Medium, sans-serif;
   box-sizing: border-box;
 }
 
@@ -47,12 +48,6 @@ body {
   --font-family-bold: Poppins-Bold;
 }
 
-
-
-
-
-
-
 @media only screen and (max-width: 1500px) {
   :root {
     --top-wrapper-padding: 20px 5vw;
@@ -61,7 +56,6 @@ body {
   }
 }
 
-
 @media only screen and (max-width: 1250px) {
   :root {
     --top-wrapper-padding: 20px 3vw;
@@ -69,7 +63,6 @@ body {
     --main-wrapper-margin: 100px 0px;
   }
 }
-
 
 @media only screen and (max-width: 900px) {
   :root {
@@ -92,7 +85,6 @@ body {
   }
 }
 
-
 @media only screen and (max-width: 520px) {
   @-moz-document url-prefix() {
     :root {
@@ -102,42 +94,6 @@ body {
   }
 }
 
-.first-color {
-  background: #fda403;
-  background: linear-gradient(to bottom, green, blue)
-}
-
-.second-color {
-  background: #e8751a;
-}
-
-.third-color {
-  background: #c51350;
-}
-
-.fourth-color {
-  background: #8a1253;
-}
-
-.color1 {
-  color: #140f07;
-}
-
-.color2 {
-  color: #10253d;
-}
-
-.color3 {
-  color: #23649c;
-}
-
-.color4 {
-  color: #3eaaff;
-}
-
-.color5 {
-  color: #63fdff;
-}
 
 .underlineHover {
   position: relative;

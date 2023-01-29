@@ -5,8 +5,6 @@ import "aos/dist/aos.css";
 
 
 function TechStack() {
-    const scrollpos = window.pageYOffset;
-
     return (
         <section id="TechStack">
             <div data-aos-offset="150">

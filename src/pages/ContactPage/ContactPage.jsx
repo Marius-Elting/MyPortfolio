@@ -2,7 +2,6 @@ import "./ContactPage.css"
 import { useState, useRef } from "react"
 import { Link } from "react-router-dom"
 import MyPicture from "../../components/Picture/Picture"
-import CustomButton from "../../components/CustomButton/CustomButton"
 import { Helmet } from "react-helmet"
 
 function ContactPage() {

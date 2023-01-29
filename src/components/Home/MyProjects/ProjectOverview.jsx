@@ -2,7 +2,6 @@ import { Link } from "react-router-dom";
 import "./ProjectOverview.css";
 import ProjectData from "../../../ProjectData.json";
 import "aos/dist/aos.css";
-import { MovieMania1, PokeDex, WeatherApp } from "../../../Imports";
 import SingleProject from "../../SingleProject/SingleProject";
 
 function ProjectOverwiew() {
