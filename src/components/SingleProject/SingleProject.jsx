@@ -11,6 +11,7 @@ function SingleProject({ data, index }) {
             <div className="SingleProject-HoverDiv">
                 <h4>{data.headline}</h4>
                 <p>{data.description}</p>
+                <p>{data.stack}</p>
                 <a className="underlineHover" target="_blank" rel="noreferrer" href={data.link}>Click me to get to the Project</a>
             </div>
         </div>
