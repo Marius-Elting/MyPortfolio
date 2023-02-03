@@ -6,7 +6,7 @@
     transition: .6s;
     margin: 1rem 0;
     width: fit-content;
-
+    border-radius: 10px;
 }
 
 .CustomButtonWrapper:hover {
@@ -25,4 +25,8 @@
     text-decoration: none;
     transition: .6s;
     position: relative;
+}
+
+.CustomButtonWrapper .downloadButton {
+    font-size: 22px;
 }

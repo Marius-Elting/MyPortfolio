@@ -1,9 +1,7 @@
 import CustomButton from "../../CustomButton/CustomButton";
 import "./AboutMeHeader.css";
-import PlaceHolderPic from "../../../img/Placeholder.png";
-import ArrowDown from "../../ArrowDown/ArrowDown";
 import MyPicture from "../../Picture/Picture";
-
+import CV from "../../../assets/Marius Elting Lebenslauf.pdf"
 
 function AboutMeHeader() {
     return (
@@ -26,6 +24,9 @@ function AboutMeHeader() {
             <section id="AboutMeHeader-RightContainer">
                 <MyPicture />
                 <CustomButton size={25} linkTo="/contactme">Contact Me!</CustomButton>
+                <div className="CustomButtonWrapper">
+                    <a href={CV} className="underlineHover downloadButton" download="">Download CV</a>
+                </div>
             </section>
         </section>
     );
