@@ -1,0 +1,122 @@
+{
+  "English": {
+    "Home": {
+      "Headline": "Hi, ich bin Marius"
+    },
+    "Projects": {
+      "headline": "All my Projects",
+      "ProjectData": [
+        {
+          "title": "Movie Mania",
+          "headline": "The Movie Mania Project",
+          "description": "The Movie Mania Project was a front-end project. It was a group project completed by a team of four people. The project was developed using ReactJS and CSS. In addition to the front-end work, I added a Google login feature and linked a database to the page so users could save their favorite movies. The data we used for the project was gathered from the MovieDB API",
+          "image": "MovieManiaImage",
+          "link": "https://super-movie-mania.netlify.app/",
+          "stack": "#React #CSS #API"
+        },
+        {
+          "title": "Weather APP",
+          "headline": "The WeatherApp Project",
+          "description": "The WeatherApp Project was a front-end only project. I used HTML, CSS and JavaScript to develop it. The data for the project was gathered from the Open Weather API.",
+          "image": "WeatherAppImage",
+          "link": "https://marius-elting.github.io/Weather-App/",
+          "stack": "#HTML #CSS #Javascript #API"
+        },
+        {
+          "title": "PokéDex",
+          "headline": "The PokéDex Project",
+          "description": "The PokéDex Project was a front-end only project.The project was carried out by a group of four people. We used ReactJS and CSS to develop the project. The data used in the PokéDex project was obtained from the Pokemon API.",
+          "image": "PokeDexImage",
+          "link": "https://yourtoponepokedex.netlify.app/",
+          "stack": "#React #CSS #API"
+        }
+      ]
+    },
+    "AboutMe": {
+      "AllHeadline": "About Me",
+      "MyPastHeadline": "My Past",
+      "MyPast": "After graduating from secondary school in 2018, I began training as an e-commerce merchant and successfully completed the program in 2021. I then worked for a year at the training company before seeking a new challenge. I discovered Super(Code)'s Full Stack Bootcamp and, after attending a workshop and researching further, I decided to enroll in the program.<br></br> You can read more about my experiences at the bootcamp in the article The Bootcamp.",
+      "TheBootCampHeadline": "The Bootcamp",
+      "TheBootcamp": "The bootcamp began on September 19, 2022 and will end on February 23, 2023. From the start of the program, I found that I stood out among my peers and was able to learn quickly. I have a strong understanding of reading and writing code, with a particular interest in front-end development using React. I have been using my spare time to further develop my skills in this area. I am also excited to learn more about back-end development, as it allows for creating functional and data-driven applications. Within my group, I am one of the top performers and am able to help and explain code snippets to my peers. I am able to quickly read and understand code written by others."
+    },
+    "ContactMe": {
+      "Headline": "Contact Me",
+      "YName": "Your Name",
+      "YEmail": "Your Email",
+      "YSubject": "Your Subject",
+      "YMessage": "Your Message",
+      "Acceptpolicy": "I agree that Marius Elting may use my personal data (name and e-mail address) to contact me.",
+      "Infopolicy": "By submitting this request, you acknowledge that you have read the",
+      "policyLink": "Private Policy",
+      "button": "Send"
+    },
+    "Privacy": {
+      "Headline": "Privacy",
+      "Text": "I do not use cookies or similar. The data sent in the contact form will be forwarded to my e-mail address (contact@mariuselting.dev). The messages are only read and answered by me"
+    },
+    "Other": {
+      "contactButton": "Contact Me!",
+      "downloadCV": "Download CV"
+    }
+  },
+  "Deutsch": {
+    "Home": {
+      "Headline": "Hallo, ich bin Marius"
+    },
+    "Projects": {
+      "headline": "Alle meine Projekte",
+      "ProjectData": [
+        {
+          "title": "Movie Mania",
+          "headline": "Das Movie Mania Projekt",
+          "description": "Das Movie Mania Projekt war ein Front-End-Projekt. Es wurde von einem Team aus vier Personen abgeschlossen. Das Projekt wurde mit ReactJS entwickelt. Zusätzlich zur Front-End-Arbeit habe ich eine Google-Login-Funktion hinzugefügt und eine Datenbank mit der Seite verknüpft, damit Benutzer ihre Lieblingsfilme speichern können. Die für das Projekt verwendeten Daten wurden von der MovieDB API gesammelt.",
+          "image": "MovieManiaImage",
+          "link": "https://super-movie-mania.netlify.app/",
+          "stack": "#React #CSS #API"
+        },
+        {
+          "title": "Wetter APP",
+          "headline": "Das Wetter App Projekt",
+          "description": "Das Wetter App Projekt war ein rein Front-End-Projekt. Ich habe es mit HTML, CSS und JavaScript entwickelt. Die Daten für das Projekt wurden von der Open Weather API bezogen.",
+          "image": "WeatherAppImage",
+          "link": "https://marius-elting.github.io/Weather-App/",
+          "stack": "#HTML #CSS #Javascript #API"
+        },
+        {
+          "title": "PokéDex",
+          "headline": "Das PokéDex Projekt",
+          "description": "Das PokéDex Projekt war ein rein Front-End-Projekt. Das Projekt wurde von einer Gruppe von vier Personen durchgeführt. Wir haben ReactJS verwendet, um das Projekt zu entwickeln. Die im PokéDex-Projekt verwendeten Daten stammen von der Pokemon API.",
+          "image": "PokeDexImage",
+          "link": "https://yourtoponepokedex.netlify.app/",
+          "stack": "#React #CSS #API"
+        }
+      ]
+    },
+    "AboutMe": {
+      "AllHeadline": "Über Mich",
+      "MyPastHeadline": "Meine Vergangenheit",
+      "MyPast": "Nach dem Abschluss der Realschule im Jahr 2018 habe ich eine Ausbildung zum Kaufmann im E-Commerce begonnen und diese erfolgreich im Jahr 2021 abgeschlossen. Ich arbeitete dann ein Jahr lang bei dem Ausbildungsunternehmen, bevor ich eine neue Herausforderung suchte. Ich entdeckte Super(Code)'s Full Stack Bootcamp und entschied mich nach Teilnahme an einem Workshop und weiteren Recherchen, für das Bootcamp bei Super(Code).<br></br> Du kannst mehr über meine Erfahrungen im Bootcamp in dem Artikel The Bootcamp lesen.",
+      "TheBootCampHeadline": "Das Bootcamp",
+      "TheBootcamp": "Das Bootcamp begann am 19. September 2022 und endet am 23. Februar 2023. Von Beginn an stach ich gegenüber den anderen Teilnehmern heraus und konnte schnell lernen. Ich habe ein starkes Verständnis dafür, Code zu lesen und zu schreiben, insbesondere im Front-End-Entwicklungsbereich mit React. Ich nutze meine Freizeit, um meine Fähigkeiten in diesem Bereich weiter zu entwickeln. Ich bin auch begeistert, mehr über Back-End-Entwicklung zu erfahren, da es die Möglichkeit bietet, funktionale und datengetriebene Anwendungen zu erstellen. Innerhalb meiner Gruppe bin ich einer der Top-Performer und kann den anderen Teilnehmern Code erklären und weiterhelfen. Ich kann schnell Code von anderen lesen und verstehen."
+    },
+    "ContactMe": {
+      "Headline": "Kontaktiere Mich",
+      "YName": "Dein Name",
+      "YEmail": "Deine E-Mail",
+      "YSubject": "Dein Betreff",
+      "YMessage": "Deine Nachricht",
+      "Acceptpolicy": "Ich stimme zu, dass Marius Elting meine personenbezogenen Daten (Name und E-Mail-Adresse) verwenden darf, um mit mir Kontakt aufzunehmen.",
+      "Infopolicy": "Durch Übermittlung dieser Anfrage bestätigen Sie, dass Sie die",
+      "policyLink": "Datenschutzerklärung",
+      "button": "Senden"
+    },
+    "Privacy": {
+      "Headline": "Privacy",
+      "Text": "I do not use cookies or similar. The data sent in the contact form will be forwarded to my e-mail address (contact@mariuselting.dev). The messages are only read and answered by me"
+    },
+    "Other": {
+      "contactButton": "Contact Me!",
+      "downloadCV": "Download CV"
+    }
+  }
+}

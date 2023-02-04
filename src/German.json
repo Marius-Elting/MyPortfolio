@@ -1,0 +1,36 @@
+{
+    "ProjectData": [
+        {
+          "title": "Movie Mania",
+          "headline": "The Movie Mania Project",
+          "description": "The Movie Mania Project was a front-end project. It was a group project completed by a team of four people. The project was developed using ReactJS and CSS. In addition to the front-end work, I added a Google login feature and linked a database to the page so users could save their favorite movies. The data we used for the project was gathered from the MovieDB API",
+          "image": "MovieManiaImage",
+          "link": "https://super-movie-mania.netlify.app/",
+          "stack": "#React #CSS #API"
+        },
+        {
+          "title": "Weather APP",
+          "headline": "The WeatherApp Project",
+          "description": "The WeatherApp Project was a front-end only project. I used HTML, CSS and JavaScript to develop it. The data for the project was gathered from the Open Weather API.",
+          "image": "WeatherAppImage",
+          "link": "https://marius-elting.github.io/Weather-App/",
+          "stack": "#HTML #CSS #Javascript #API"
+        },
+        {
+          "title": "PokéDex",
+          "headline": "The PokéDex Project",
+          "description": "The PokéDex Project was a front-end only project.The project was carried out by a group of four people. We used ReactJS and CSS to develop the project. The data used in the PokéDex project was obtained from the Pokemon API.",
+          "image": "PokeDexImage",
+          "link": "https://yourtoponepokedex.netlify.app/",
+          "stack": "#React #CSS #API"
+        },
+        {
+          "title": "",
+          "headline": "",
+          "description": "",
+          "image": "",
+          "link": ""
+        }
+      ]
+      
+}
