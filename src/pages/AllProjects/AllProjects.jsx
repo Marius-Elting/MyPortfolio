@@ -1,9 +1,15 @@
 import SingleProject from "../../components/SingleProject/SingleProject";
-import ProjectData from "../../ProjectData.json"
 import "./AllProjects.css";
 import { aosDataProject } from "../../Imports";
 import { Helmet } from "react-helmet";
+import Data from "../../Languages.json"
+
 function AllProjects() {
+
+    const lang = sessionStorage.getItem("Language")
+    const { Projects } = Data[lang]
+
+
     return (<main id="AllProjectsWrapper">
         <Helmet>
             <meta charSet="utf-8" />
@@ -14,11 +20,11 @@ function AllProjects() {
   I'm an aspiring Full Stack Web Developer using the MERN Stack. Here you con find my Projects" />
         </Helmet>
         <div>
-            <h1 {...aosDataProject}>All my Projects</h1>
+            <h1 {...aosDataProject}>{Projects.headline}</h1>
 
         </div>
         <article>
-            {ProjectData.slice(0, 3).map((project, index) => (
+            {Projects.ProjectData.slice(0, 3).map((project, index) => (
                 <SingleProject key={index} data={project} />
             ))}
         </article>
