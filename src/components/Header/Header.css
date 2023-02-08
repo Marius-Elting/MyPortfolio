@@ -43,6 +43,16 @@
     list-style-type: none;
 }
 
+
+#HeaderWrapper #NavWrapper ul li span:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+#HeaderWrapper #NavWrapper ul li span.active {
+    text-decoration: underline;
+}
+
 #HeaderWrapper #NavWrapper ul li a {
     text-decoration: none;
     color: var(--text-color);

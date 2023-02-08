@@ -3,6 +3,7 @@ import { useState, useRef } from "react"
 import { Link } from "react-router-dom"
 import MyPicture from "../../components/Picture/Picture"
 import { Helmet } from "react-helmet"
+import Data from "../../Languages.json"
 
 function ContactPage() {
     const [emailStatus, setEmailStatus] = useState()
@@ -13,6 +14,8 @@ function ContactPage() {
     const textRef = useRef()
     const acceptPolicy = useRef()
 
+    const lang = sessionStorage.getItem("Language")
+    const { ContactMe, Other } = Data[lang]
 
     const sendMail = (e) => {
         e.preventDefault()
@@ -69,15 +72,15 @@ function ContactPage() {
   I'm an aspiring Full Stack Web Developer using the MERN Stack. Contact me per Mail." />
             </Helmet>
             <section className="ContactPage-LeftContainer">
-                <h1>Contact Me!</h1>
+                <h1>{ContactMe.Headline}</h1>
                 <form className="ContactPage-FormWrapper" onSubmit={sendMail}>
-                    <label htmlFor="yourName">Your Name</label>
+                    <label htmlFor="yourName">{ContactMe.YName}</label>
                     <input
                         id="yourName"
                         onChange={(e) => {
                             containsNumbers(e, e.target.value)
                         }}
-                        ref={nameRef} type="text" name="senderName" placeholder="Your Name"
+                        ref={nameRef} type="text" name="senderName" placeholder={ContactMe.YName}
                     >
                     </input>
                     <p
@@ -87,9 +90,9 @@ function ContactPage() {
                             display: nameStatus === "Error" ? "block" : "none",
                         }}
                     >
-                        Names can not contain numbers.
+                        {ContactMe.nameError}
                     </p>
-                    <label htmlFor="yourmail">Your E-Mail</label>
+                    <label htmlFor="yourmail">{ContactMe.YEmail}</label>
 
                     <input
                         id="yourmail"
@@ -97,7 +100,7 @@ function ContactPage() {
                         style={{
                             border: emailStatus === "Error" ? "3px solid red" : emailStatus === "OK" ? "3px solid green" : ""
                         }}
-                        type="text" name="from" placeholder="Your E-Mail" ref={emailRef}
+                        type="text" name="from" placeholder={ContactMe.YEmail} ref={emailRef}
                     >
                     </input>
                     <p
@@ -106,9 +109,9 @@ function ContactPage() {
                             display: emailStatus === "Error" ? "block" : "none",
                         }}
                     >
-                        Please enter a valid E-Mail.
+                        {ContactMe.emailError}
                     </p>
-                    <label htmlFor="yourSubject">Your Subject</label>
+                    <label htmlFor="yourSubject">{ContactMe.YSubject}</label>
                     <input
                         id="yourSubject"
                         onChange={(e) => {
@@ -118,10 +121,10 @@ function ContactPage() {
                                 e.target.style.border = "3px solid red"
                             }
                         }}
-                        ref={subjectRef} type="text" name="subject" placeholder="Your Subject"
+                        ref={subjectRef} type="text" name="subject" placeholder={ContactMe.YSubject}
                     >
                     </input>
-                    <label htmlFor="yourMessage">Your Message</label>
+                    <label htmlFor="yourMessage">{ContactMe.YMessage}</label>
                     <textarea
                         id="yourMessage"
                         onChange={(e) => {
@@ -131,12 +134,12 @@ function ContactPage() {
                                 e.target.style.border = "3px solid red"
                             }
                         }}
-                        ref={textRef} name="message" placeholder="Your Message"
+                        ref={textRef} name="message" placeholder={ContactMe.YMessage}
                     >
                     </textarea>
                     <div className="ContactPage-acceptData">
-                        <label htmlFor="acceptDatenschutz"><input ref={acceptPolicy} type="checkbox" id="acceptDatenschutz" />I agree that Marius Elting may use my personal data (name and e-mail address) to contact me.</label>
-                        <p>By submitting this request, you acknowledge that you have read the {<Link to="/privatepolicy">Privacy Policy.</Link>}</p>
+                        <label htmlFor="acceptDatenschutz"><input ref={acceptPolicy} type="checkbox" id="acceptDatenschutz" />{ContactMe.Acceptpolicy}</label>
+                        <p>{ContactMe.Infopolicy} {<Link to="/privatepolicy">{ContactMe.policyLink}</Link>}</p>
                     </div>
                     {/* <CustomButton type={"submit"} size={25} linkTo="/contactme">Send</CustomButton> */}
                     <button type="submit">Send</button>

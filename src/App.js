@@ -3,7 +3,7 @@ import './App.css';
 import Header from './components/Header/Header';
 import Home from './pages/Home/Home';
 import Aos from "aos";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import AboutMe from './pages/AboutMe/AboutMe';
 import AllProjects from './pages/AllProjects/AllProjects';
 import ContactPage from './pages/ContactPage/ContactPage';
@@ -11,6 +11,15 @@ import DataPolicy from './pages/Policy/Policy';
 import Error404Page from './pages/404Page/404Page';
 
 function App() {
+  const [lang, setLang] = useState("English")
+
+  const changeLangHandler = (param) => {
+    setLang(param)
+    sessionStorage.setItem("Language", param)
+  }
+  if (!sessionStorage.getItem("Language")) {
+    changeLangHandler("English")
+  }
   useEffect(() => {
     Aos.init({ duration: 1000 });
     window.addEventListener('scroll', scrollHandler, { passive: true });
@@ -34,7 +43,7 @@ function App() {
   return (
     <>
       <Router>
-        <Header />
+        <Header setLang={changeLangHandler} />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/AboutMe" element={<AboutMe />} />^
