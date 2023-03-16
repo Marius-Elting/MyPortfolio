@@ -1,4 +1,4 @@
-import { HTML, CSS, JavaScript, MongoDBIcon, ExpressIcon, ReactIcon, NodeJSIcon, aosDataProject, Redux, Firebase, Git, Figma, Sass, Bootstrap, webflow } from "../../../Imports";
+import { HTML, CSS, JavaScript, MongoDBIcon, ExpressIcon, ReactIcon, NodeJSIcon, aosDataProject, Redux, Firebase, Git, Figma, Sass, Bootstrap, TS } from "../../../Imports";
 
 import "./TechStack.css";
 import "aos/dist/aos.css";
@@ -85,6 +85,13 @@ function TechStack() {
 
                     </div>
                 </div>
+                <div className="SingleImgWrapper"  {...aosDataProject} data-aos-offset="156"
+                >
+                    <img src={TS} alt="TypeScript Logo"></img>
+                    <div className="ImgDescription">
+                        <h2>TypeScript</h2>
+                    </div>
+                </div>
                 <div className="SingleImgWrapper"  {...aosDataProject} data-aos-offset="152"
                 >
                     <img src={Figma} alt="Figma Logo"></img>
@@ -118,13 +125,7 @@ function TechStack() {
                     </div>
                 </div>
 
-                <div className="SingleImgWrapper"  {...aosDataProject} data-aos-offset="156"
-                >
-                    <img src={webflow} alt="weblfow Logo"></img>
-                    <div className="ImgDescription">
-                        <h2>Webflow</h2>
-                    </div>
-                </div>
+
             </article>
         </section>
     );
