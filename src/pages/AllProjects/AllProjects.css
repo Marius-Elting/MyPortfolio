@@ -1,6 +1,8 @@
 #AllProjectsWrapper {
     margin: var(--main-wrapper-margin);
     padding: var(--main-wrapper-padding);
+    margin-bottom: 0;
+    padding-bottom: 20vh;
     display: flex;
     flex-direction: column;
     gap: 3rem;

@@ -26,6 +26,7 @@ body {
   /* background-color: #002855 */
   background: linear-gradient(#002855 34%, #0a2e71 70%, #023E7D 100%);
   min-height: 90vh;
+  position: relative;
 }
 
 

@@ -9,6 +9,8 @@ import AllProjects from './pages/AllProjects/AllProjects';
 import ContactPage from './pages/ContactPage/ContactPage';
 import DataPolicy from './pages/Policy/Policy';
 import Error404Page from './pages/404Page/404Page';
+import Impressum from './pages/Impressum/Impressum';
+import Footer from './components/Footer/Footer';
 
 function App() {
   const [lang, setLang] = useState("English")
@@ -50,8 +52,10 @@ function App() {
           <Route path="/projects" element={<AllProjects />} />
           <Route path="/contactme" element={<ContactPage />} />
           <Route path="/privatepolicy" element={<DataPolicy />} />
+          <Route path="/impressum" element={<Impressum />} />
           <Route path="*" element={<Error404Page />} status={404} />
         </Routes>
+        <Footer />
       </Router>
     </>
   );
