@@ -4,10 +4,12 @@ import { Link } from "react-router-dom";
 import MyPicture from "../../components/Picture/Picture";
 import { Helmet } from "react-helmet";
 import Data from "../../Languages.json";
+import Loading from "../../components/Loading/Loading";
 
 function ContactPage() {
     const [emailStatus, setEmailStatus] = useState();
     const [nameStatus, setNameStatus] = useState();
+    const [isLoading, setLoading] = useState(false)
     const emailRef = useRef();
     const subjectRef = useRef();
     const nameRef = useRef();
@@ -19,6 +21,7 @@ function ContactPage() {
 
     const sendMail = (e) => {
         e.preventDefault();
+        setLoading(true)
         if (!emailRef.current.value) setEmailStatus("Error");
         if (!subjectRef.current.value) subjectRef.current.style.border = "3px solid red";
         if (!nameRef.current.value) nameRef.current.style.border = "3px solid red";
@@ -39,6 +42,8 @@ function ContactPage() {
                     setEmailStatus("OK");
                     e.target.reset();
                 }
+                setLoading(false)
+
             });
     };
 
@@ -142,7 +147,12 @@ function ContactPage() {
                         <p>{ContactMe.Infopolicy} {<Link to="/privatepolicy">{ContactMe.policyLink}</Link>} {lang === "German" ? "gelesen haben." : ""}</p>
                     </div>
                     {/* <CustomButton type={"submit"} size={25} linkTo="/contactme">Send</CustomButton> */}
-                    <button type="submit">Send</button>
+                    <div className="ContactPage-SendButtonWrapper">
+                        <button disabled={isLoading ? true : false} type="submit">
+                            Send
+                        </button>
+                        {isLoading && <Loading center={true} />}
+                    </div>
                 </form>
             </section>
             <section className="ContactPage-RightContainer">
