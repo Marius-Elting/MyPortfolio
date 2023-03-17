@@ -9,7 +9,7 @@ import Loading from "../../components/Loading/Loading";
 function ContactPage() {
     const [emailStatus, setEmailStatus] = useState();
     const [nameStatus, setNameStatus] = useState();
-    const [isLoading, setLoading] = useState(false)
+    const [isLoading, setLoading] = useState("")
     const emailRef = useRef();
     const subjectRef = useRef();
     const nameRef = useRef();
@@ -21,14 +21,17 @@ function ContactPage() {
 
     const sendMail = (e) => {
         e.preventDefault();
-        setLoading(true)
+        setLoading("loading")
         if (!emailRef.current.value) setEmailStatus("Error");
         if (!subjectRef.current.value) subjectRef.current.style.border = "3px solid red";
         if (!nameRef.current.value) nameRef.current.style.border = "3px solid red";
         if (!textRef.current.value) textRef.current.style.border = "3px solid red";
         if (!acceptPolicy.current.checked) acceptPolicy.current.style.outline = "3px solid red";
 
-        if (!emailRef.current.value || !subjectRef.current.value || !nameRef.current.value || !textRef.current.value || !acceptPolicy.current.checked) return;
+        if (!emailRef.current.value || !subjectRef.current.value || !nameRef.current.value || !textRef.current.value || !acceptPolicy.current.checked) {
+            setLoading("")
+            return;
+        }
         const form = new FormData(e.target);
         fetch(`${process.env.REACT_APP_URL}/contactme`,
             {
@@ -38,12 +41,12 @@ function ContactPage() {
             .then(res => {
                 if (res === "Email Error") {
                     setEmailStatus("Error");
+                    setLoading("error")
                 } else {
+                    setLoading("success")
                     setEmailStatus("OK");
                     e.target.reset();
                 }
-                setLoading(false)
-
             });
     };
 
@@ -148,10 +151,13 @@ function ContactPage() {
                     </div>
                     {/* <CustomButton type={"submit"} size={25} linkTo="/contactme">Send</CustomButton> */}
                     <div className="ContactPage-SendButtonWrapper">
-                        <button disabled={isLoading ? true : false} type="submit">
+                        <button disabled={isLoading === "loading" ? true : false} type="submit">
                             Send
                         </button>
-                        {isLoading && <Loading center={true} />}
+                        {isLoading === "loading" && <Loading center={true} />}
+                        {isLoading !== "loading" && isLoading !== "" &&
+                            <p>{isLoading === "error" ? lang === "English" ? "Unfortunately there was an Error." : "Da ist leider etwas schief gelaufen." : lang === "English" ? "Your mail has ben sent successfully." : "Deine Nachricht wurde erfolgreich versendet."}</p>
+                        }
                     </div>
                 </form>
             </section>

@@ -5,6 +5,7 @@
     gap: 3rem;
     padding: var(--main-wrapper-padding);
     margin: var(--main-wrapper-margin);
+    margin-bottom: 0;
     position: relative;
 }
 
