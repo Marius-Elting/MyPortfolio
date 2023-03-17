@@ -1,10 +1,11 @@
-import { MovieMania1, PokeDex, WeatherApp, aosDataProject } from "../../Imports";
+import { MovieMania1, PokeDex, WeatherApp, aosDataProject, SilentMoon } from "../../Imports";
 import "./SingleProject.css";
 
 function SingleProject({ data, index }) {
     let MovieManiaImage = MovieMania1;
     let PokeDexImage = PokeDex;
     let WeatherAppImage = WeatherApp;
+    let SilentMoonImg = SilentMoon
 
 
     return (

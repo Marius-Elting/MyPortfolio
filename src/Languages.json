@@ -38,6 +38,14 @@
           "image": "PokeDexImage",
           "link": "https://yourtoponepokedex.netlify.app/",
           "stack": "#React #CSS #API"
+        },
+        {
+          "title": "Silent Moon",
+          "headline": "The Silent Moon Project",
+          "description": "The Silent Moon Project was a big Full-Stack project.The project was carried out by a group of three people. We used ReactJS, Redux and SCSS for the frontend and NodeJS, ExpressJS and MongoDB for the backend. This website is mobile optimized only at the moment!",
+          "image": "SilentMoonImg",
+          "link": "https://silentmoon.up.railway.app/",
+          "stack": "#React #SCSS #Nodejs #Expressjs #Mongodb #Redux"
         }
       ]
     },
@@ -109,6 +117,13 @@
           "image": "PokeDexImage",
           "link": "https://yourtoponepokedex.netlify.app/",
           "stack": "#React #CSS #API"
+        }, {
+          "title": "Silent Moon",
+          "headline": "Das Silent Moon Projekt",
+          "description": "Das Silent Moon Projekt war ein großes Full-Stack-Projekt, das von einer Gruppe von drei Personen durchgeführt wurde. Wir benutzten ReactJS, Redux und SCSS für das Frontend und NodeJS, ExpressJS und MongoDB für das Backend. Diese Website ist im Moment nur für mobile Geräte optimiert!",
+          "image": "SilentMoonImg",
+          "link": "https://silentmoon.up.railway.app/",
+          "stack": "#React #SCSS #Nodejs #Expressjs #Mongodb #Redux"
         }
       ]
     },
