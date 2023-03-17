@@ -9,6 +9,7 @@ export { default as JavaScript } from "./img/svg/Javascript.svg";
 export { default as MovieMania1 } from "./img/MovieMania1.webp";
 export { default as PokeDex } from "./img/PokeDex.webp";
 export { default as WeatherApp } from "./img/WeatherApp.png";
+export { default as SilentMoon } from "./img/SilentMoonImg.png"
 export { default as Redux } from "./img/svg/redux.svg"
 export { default as Firebase } from "./img/svg/Firebase.svg"
 export { default as Git } from "./img/svg/Git.svg"
