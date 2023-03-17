@@ -18,10 +18,10 @@ function ThisIsMe() {
                     <h3>{"<"}Full Stack Webdeveloper{"/>"}</h3>
                 </article>
                 <article id="ThisIsMe-TechStackImgWrapper">
-                    <p><img src={MongoDBIcon} alt="MongoDB Logo"></img>MongoDB</p>
-                    <p><img src={ExpressIcon} alt="Express Logo"></img>ExpressJS</p>
-                    <p><img src={ReactIcon} alt="React logo"></img>ReactJS</p>
-                    <p><img src={NodeJSIcon} alt="NodeJS Logo"></img>NodeJS</p>
+                    <a href="#TechStack"><img src={MongoDBIcon} alt="MongoDB Logo"></img>MongoDB</a>
+                    <a href="#TechStack"><img src={ExpressIcon} alt="Express Logo"></img>ExpressJS</a>
+                    <a href="#TechStack"><img src={ReactIcon} alt="React logo"></img>ReactJS</a>
+                    <a href="#TechStack"><img src={NodeJSIcon} alt="NodeJS Logo"></img>NodeJS</a>
                 </article>
                 <CustomButton size={20} linkTo="/contactme">{Other.contactButton}</CustomButton>
                 <div>
