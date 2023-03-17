@@ -2,6 +2,8 @@
     margin: var(--main-wrapper-margin);
     padding: var(--main-wrapper-padding);
     display: flex;
+    margin-bottom: 0;
+    padding-bottom: 15vh;
     justify-content: space-between;
     color: var(--text-color)
 }
