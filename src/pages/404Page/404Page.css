@@ -9,7 +9,21 @@
     gap: 1rem;
 }
 
+#ErrorPageMainWrapper h1 {
+    background: -webkit-linear-gradient(var(--background-color-two), var(--background-color-one));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: calc(var(--p-font-size)*13);
+}
+
+#ErrorPageMainWrapper p {
+    background: -webkit-linear-gradient(var(--background-color-two), var(--background-color-one));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
 #ErrorPageMainWrapper a {
     font-size: calc(var(--p-font-size)*2);
     color: var(--text-color);
+
 }
