@@ -14,7 +14,7 @@
     height: 400px;
 }
 
-#MyPictureWrapper::before {
+/* #MyPictureWrapper::before {
     content: "<";
     font-size: calc(var(--p-font-size)*10);
     position: absolute;
@@ -29,7 +29,7 @@
 }
 
 #MyPictureWrapper::after {
-    content: ">";
+    content: "'";
     font-size: calc(var(--p-font-size)*10);
     position: absolute;
     bottom: -100px;
@@ -40,7 +40,7 @@
     opacity: .5;
     color: var(--background-color-two);
     display: block;
-}
+} */
 
 @media only screen and (max-width: 900px) {
 
