@@ -1,6 +1,7 @@
 import "./Header.css";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import Data from "../../Languages.json"
+import { useEffect } from "react";
 
 function Header({ setLang }) {
     const lang = sessionStorage.getItem("Language")
@@ -8,6 +9,11 @@ function Header({ setLang }) {
     const navigated = () => {
         document.querySelector(".Header-Burger").checked = false
     }
+    const { pathname } = useLocation();
+
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, [pathname]);
     return (
         <header id="HeaderWrapper">
             <input className="Header-AcceptInfo" type="checkbox"></input>

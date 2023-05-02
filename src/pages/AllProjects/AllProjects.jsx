@@ -9,7 +9,6 @@ function AllProjects() {
     const lang = sessionStorage.getItem("Language")
     const { Projects } = Data[lang]
 
-
     return (<main id="AllProjectsWrapper">
         <Helmet>
             <meta charSet="utf-8" />

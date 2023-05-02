@@ -127,3 +127,11 @@
         display: none;
     }
 }
+
+@media only screen and (max-width: 600px) {
+
+    .SingleProject-HoverDiv p,
+    .SingleProject-HoverDiv h4 {
+        font-size: calc(var(--p-font-size)*1.5);
+    }
+}

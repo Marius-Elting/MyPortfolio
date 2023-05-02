@@ -14,7 +14,7 @@ function ProjectOverwiew() {
                 <h2>myProjects</h2>
             </article>
             <article className="ProjectsOverview-ProjectWrapper">
-                {Projects.ProjectData.slice(0, 4).map((project, index) => (
+                {Projects.ProjectData.slice(0, 3).map((project, index) => (
                     <SingleProject key={index} data={project} />
                 ))}
             </article>

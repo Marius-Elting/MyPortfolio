@@ -24,14 +24,6 @@
           "stack": "#React #CSS #API"
         },
         {
-          "title": "Weather APP",
-          "headline": "The WeatherApp Project",
-          "description": "The WeatherApp Project was a front-end only project. I used HTML, CSS and JavaScript to develop it. The data for the project was gathered from the Open Weather API.",
-          "image": "WeatherAppImage",
-          "link": "https://marius-elting.github.io/Weather-App/",
-          "stack": "#HTML #CSS #Javascript #API"
-        },
-        {
           "title": "PokéDex",
           "headline": "The PokéDex Project",
           "description": "The PokéDex Project was a front-end only project.The project was carried out by a group of four people. We used ReactJS and CSS to develop the project. The data used in the PokéDex project was obtained from the Pokemon API.",
@@ -46,6 +38,14 @@
           "image": "SilentMoonImg",
           "link": "https://silentmoon.up.railway.app/",
           "stack": "#React #SCSS #Nodejs #Expressjs #Mongodb #Redux"
+        },
+        {
+          "title": "Weather APP",
+          "headline": "The WeatherApp Project",
+          "description": "The WeatherApp Project was a front-end only project. I used HTML, CSS and JavaScript to develop it. The data for the project was gathered from the Open Weather API.",
+          "image": "WeatherAppImage",
+          "link": "https://marius-elting.github.io/Weather-App/",
+          "stack": "#HTML #CSS #Javascript #API"
         }
       ]
     },
@@ -103,14 +103,6 @@
           "stack": "#React #CSS #API"
         },
         {
-          "title": "Wetter APP",
-          "headline": "Das Wetter App Projekt",
-          "description": "Das Wetter App Projekt war ein rein Front-End-Projekt. Ich habe es mit HTML, CSS und JavaScript entwickelt. Die Daten für das Projekt wurden von der Open Weather API bezogen.",
-          "image": "WeatherAppImage",
-          "link": "https://marius-elting.github.io/Weather-App/",
-          "stack": "#HTML #CSS #Javascript #API"
-        },
-        {
           "title": "PokéDex",
           "headline": "Das PokéDex Projekt",
           "description": "Das PokéDex Projekt war ein rein Front-End-Projekt. Das Projekt wurde von einer Gruppe von vier Personen durchgeführt. Wir haben ReactJS verwendet, um das Projekt zu entwickeln. Die im PokéDex-Projekt verwendeten Daten stammen von der Pokemon API.",
@@ -125,6 +117,14 @@
           "image": "SilentMoonImg",
           "link": "https://silentmoon.up.railway.app/",
           "stack": "#React #SCSS #Nodejs #Expressjs #Mongodb #Redux"
+        },
+        {
+          "title": "Wetter APP",
+          "headline": "Das Wetter App Projekt",
+          "description": "Das Wetter App Projekt war ein rein Front-End-Projekt. Ich habe es mit HTML, CSS und JavaScript entwickelt. Die Daten für das Projekt wurden von der Open Weather API bezogen.",
+          "image": "WeatherAppImage",
+          "link": "https://marius-elting.github.io/Weather-App/",
+          "stack": "#HTML #CSS #Javascript #API"
         }
       ]
     },

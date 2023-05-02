@@ -15,6 +15,7 @@ import Footer from './components/Footer/Footer';
 function App() {
   const [lang, setLang] = useState("English")
 
+
   const changeLangHandler = (param) => {
     setLang(param)
     sessionStorage.setItem("Language", param)
