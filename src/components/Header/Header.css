@@ -5,11 +5,9 @@
     flex-wrap: wrap;
     background-color: var(--background-color-one);
     padding: 10px 40px;
-    /* height: 75px; */
     color: var(--text-color);
     position: fixed;
     top: 0;
-    /* width: 30px; */
     left: 0;
     right: 0;
     overflow: hidden;

@@ -70,19 +70,22 @@
     content: "See more..."
 }
 
+
+
 .seeMore:checked::before {
     content: "See less..."
 }
 
 .AboutMeHeader-DetailText:has(+ .seeMore:checked) {
     height: none;
-    display: block
+    display: block;
 }
 
 .AboutMeHeader-DetailText {
     display: -webkit-box;
     -webkit-line-clamp: 5;
     overflow: hidden;
+    white-space: pre-wrap;
     -webkit-box-orient: vertical;
 }
 
@@ -133,7 +136,13 @@
     #AboutMeHeader-Wrapper #AboutMeHeader-InfoWrapperOne {
         width: 90%;
         align-self: start;
-        font-size: calc(var(--p-font-size)*1.2);
+        font-size: calc(var(--p-font-size)*1.8);
+    }
+
+    .seeMore::before,
+    .seeMore::after {
+        font-size: calc(var(--p-font-size)*1.8);
+
     }
 }
 
@@ -144,4 +153,20 @@
         align-items: center;
         gap: 5rem;
     }
+}
+
+
+@-moz-document url-prefix() {
+    .AboutMeHeader-DetailText {
+        display: flex;
+        -webkit-line-clamp: 5;
+        overflow: hidden;
+        white-space: pre-wrap;
+        -webkit-box-orient: vertical;
+    }
+
+    .seeMore {
+        display: none;
+    }
+
 }

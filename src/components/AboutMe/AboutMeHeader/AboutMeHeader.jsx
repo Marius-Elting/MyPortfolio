@@ -1,7 +1,7 @@
 import CustomButton from "../../CustomButton/CustomButton";
 import "./AboutMeHeader.css";
 import MyPicture from "../../Picture/Picture";
-import CV from "../../../assets/Marius Elting Lebenslauf.pdf"
+import CV from "../../../assets/Marius_Elting_Lebenslauf.pdf"
 import Data from "../../../Languages.json"
 
 function AboutMeHeader() {
