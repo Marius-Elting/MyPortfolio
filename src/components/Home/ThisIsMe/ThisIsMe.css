@@ -95,16 +95,28 @@
     display: block;
 } */
 
+#ThisIsMeWrapper #ThisIsMe-LeftContainer div {
+    display: flex;
+
+}
+
 #ThisIsMeWrapper #ThisIsMe-LeftContainer .icons {
     font-size: 40px;
+    height: 65px;
+    width: 65px;
     padding: 10px;
     transition: all .3s linear;
-    color: var(--text-color);
+    fill: var(--text-color);
 }
 
 
 #ThisIsMeWrapper #ThisIsMe-LeftContainer .icons:hover {
-    color: var(--background-color-one);
+    fill: var(--background-color-one);
+    cursor: pointer
+}
+
+#ThisIsMeWrapper #ThisIsMe-LeftContainer .ThisIsMe-LogoWrapper:hover .icons {
+    fill: var(--background-color-one);
     cursor: pointer
 }
 

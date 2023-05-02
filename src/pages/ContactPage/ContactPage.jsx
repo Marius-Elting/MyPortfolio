@@ -5,6 +5,7 @@ import MyPicture from "../../components/Picture/Picture";
 import { Helmet } from "react-helmet";
 import Data from "../../Languages.json";
 import Loading from "../../components/Loading/Loading";
+import { GitHubLogo, LinkedInLogo } from "../../components/Logos/Logos";
 
 function ContactPage() {
     const [emailStatus, setEmailStatus] = useState();
@@ -166,8 +167,8 @@ function ContactPage() {
                     <MyPicture />
                 </article>
                 <article>
-                    <a title="My LinkedIn" target="_blanck" href="https://www.linkedin.com/in/marius-elting-a60959203/"><i className="uil uil-linkedin icons"></i></a>
-                    <a title="My Github" target="_blanck" href="https://github.com/Marius-Elting"><i className="uil uil-github icons"></i></a>
+                    <a className="ThisIsMe-LogoWrapper" title="My LinkedIn" target="_blanck" href="https://www.linkedin.com/in/marius-elting-a60959203/"><LinkedInLogo /></a>
+                    <a className="ThisIsMe-LogoWrapper" title="My Github" target="_blanck" href="https://github.com/Marius-Elting"> <GitHubLogo /></a>
                 </article>
                 <article>
                     <a href="mailto:contact@mariuselting.dev" className="underlineHover">contact@mariuselting.dev</a>

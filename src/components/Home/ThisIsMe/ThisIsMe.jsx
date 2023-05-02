@@ -4,7 +4,8 @@ import CustomButton from "../../CustomButton/CustomButton";
 import ArrowDown from "../../ArrowDown/ArrowDown";
 import MyPicture from "../../Picture/Picture";
 import Data from "../../../Languages.json"
-
+import { GitHub, LinkedIn } from "../../../Imports";
+import { GitHubLogo, LinkedInLogo } from "../../Logos/Logos";
 
 function ThisIsMe() {
     const lang = sessionStorage.getItem("Language")
@@ -25,8 +26,8 @@ function ThisIsMe() {
                 </article>
                 <CustomButton size={20} linkTo="/contactme">{Other.contactButton}</CustomButton>
                 <div>
-                    <a title="My LinkedIn" target="_blanck" href="https://www.linkedin.com/in/marius-elting-a60959203/"><i className="uil uil-linkedin icons"></i></a>
-                    <a title="My Github" target="_blanck" href="https://github.com/Marius-Elting"><i className="uil uil-github icons"></i></a>
+                    <a className="ThisIsMe-LogoWrapper" title="My LinkedIn" target="_blanck" href="https://www.linkedin.com/in/marius-elting-a60959203/"><LinkedInLogo /></a>
+                    <a className="ThisIsMe-LogoWrapper" title="My Github" target="_blanck" href="https://github.com/Marius-Elting"> <GitHubLogo /></a>
                 </div>
             </article>
             <article id="ThisIsMe-RightContainer">

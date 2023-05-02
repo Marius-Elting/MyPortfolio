@@ -16,6 +16,8 @@ export { default as Git } from "./img/svg/Git.svg"
 export { default as Figma } from "./img/svg/Figma.svg"
 export { default as Sass } from "./img/svg/Sass.svg"
 export { default as Bootstrap } from "./img/svg/Bootstrap_.svg"
+export { default as GitHub } from "./img/svg/gitHub.svg"
+export { default as LinkedIn } from "./img/svg/linkedIn.svg"
 export { default as TS } from "./img/svg/TS.svg"
 export const aosDataProject = { "data-aos": "zoom-out", "data-aos-offset": "140" };
 export const aosDataTechStack = { "ata-aos": "zoom-out", "data-aos-easing": "ease-in-out" };
