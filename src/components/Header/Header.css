@@ -123,6 +123,12 @@
             row-gap: 0;
         }
 
+        #HeaderWrapper #NavWrapper ul li a {
+            font-size: 1.5rem;
+            display: block;
+            margin: .5rem 0
+        }
+
         #HeaderWrapper .Header-Burger {
             display: none;
         }
@@ -150,6 +156,10 @@
     }
 
     @-moz-document url-prefix() {
+        #HeaderWrapper h1 {
+            font-size: calc(var(--p-font-size)*2);
+        }
+
         #HeaderWrapper #NavWrapper ul {
             display: flex;
             transition: all .1s linear;
